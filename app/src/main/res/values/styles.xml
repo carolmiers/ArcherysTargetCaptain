@@ -1,0 +1,37 @@
+<resources xmlns:android="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#009900</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+    <!-- Styles for the darker score buttons, with white text-->
+    <style name="targetviewhitetext" >
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+    <!-- Styles for the lighter score buttons, with black text-->
+    <style name="targetviewblacktext" >
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+    <!-- Styles for textview Archery Tournament and team name-->
+    <style name="Archerytournamentview" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">Archery Tournament</item>
+        <item name="android:layout_marginRight">16dp</item>
+    </style>
+
+
+
+</resources>

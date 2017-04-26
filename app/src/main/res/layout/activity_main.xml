@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customfontdemo="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:layout_margin="@dimen/title_spacing"
+    android:layout_marginBottom="16dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Archery Tournament"
+            android:layout_marginRight="@dimen/title_spacing"
+             />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Team A" />
+        <TextView
+            android:id="@+id/archer_a_score"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:padding="12dp"
+            android:text="0"
+            android:textSize="56dp"   />
+        </LinearLayout>
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"
+           />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"    >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Archery Tournament"
+            android:layout_marginRight="@dimen/scoreboard_margin"
+            android:layout_marginLeft="@dimen/scoreboard_margin"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Team B" />
+        <TextView
+            android:id="@+id/archer_b_score"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:padding="12dp"
+            android:text="0"
+            android:textSize="56dp"   />
+    </LinearLayout>
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="56dp">
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/title_spacing"
+                >
+                <Button
+                    android:id="@+id/ten_pointsA"
+                    style="@style/targetviewblacktext"
+                    android:onClick="addTenForArcherA"
+                    android:text="+10 POINTS"
+                    android:background="@color/centretargetgold" />
+                <Button
+                    android:id="@+id/nine_pointsA"
+                    style="@style/targetviewblacktext"
+                    android:onClick="addNineForArcherA"
+                    android:text="+9 POINTS"
+                    android:background="@color/centretargetgold"/>
+                <Button
+                    android:id="@+id/eight_pointsA"
+                    style="@style/targetviewblacktext"
+                    android:onClick="addEightForArcherA"
+                    android:text="+8 POINTS"
+                    android:background="@color/redtarget" />
+                <Button
+                    android:id="@+id/seven_pointsA"
+                    style="@style/targetviewblacktext"
+                    android:onClick="addSevenForArcherA"
+                    android:text="+7 POINTS"
+                    android:background="@color/redtarget" />
+                <Button
+                    android:id="@+id/six_pointsA"
+                    style="@style/targetviewhitetext"
+                    android:onClick="addSixForArcherA"
+                    android:text="+6 POINTS"
+                    android:background="@color/bluetarget"
+                    />
+                <Button
+                    android:id="@+id/five_pointsA"
+                    style="@style/targetviewhitetext"
+                    android:onClick="addFiveForArcherA"
+                    android:text="+5 POINTS"
+                    android:background="@color/bluetarget"
+                    />
+                <Button
+                    android:id="@+id/four_pointsA"
+                    style="@style/targetviewhitetext"
+                    android:onClick="addFourForArcherA"
+                    android:text="+4 POINTS"
+                    android:background="@color/blacktarget"
+                    />
+                <Button
+                    android:id="@+id/three_pointsA"
+                    android:onClick="addThreeForArcherA"
+                    android:text="+3 POINTS"
+                    android:background="@color/blacktarget"
+                    style="@style/targetviewhitetext"
+                    />
+                <Button
+                    android:id="@+id/two_pointsA"
+                    style="@style/targetviewblacktext"
+                    android:onClick="addTwoForArcherA"
+                    android:text="+2 POINTS"
+                     />
+                <Button
+                    android:id="@+id/one_pointA"
+                    style="@style/targetviewblacktext"
+                    android:onClick="addOneForArcherA"
+                    android:text="+1 POINT"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/team_b_score"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/title_spacing">
+                <Button
+                    android:id="@+id/ten_pointsB"
+                    style="@style/targetviewblacktext"
+                    android:onClick="addTenForArcherB"
+                    android:text="+10 POINTS"
+                    android:background="@color/centretargetgold"/>
+                <Button
+                    android:id="@+id/nine_pointsB"
+                    style="@style/targetviewblacktext"
+                    android:onClick="addNineForArcherB"
+                    android:text="+9 POINTS"
+                    android:background="@color/centretargetgold"
+                    />
+                <Button
+                    android:id="@+id/eight_pointsB"
+                    style="@style/targetviewblacktext"
+                    android:onClick="addEightForArcherB"
+                    android:text="+8 POINTS"
+                    android:background="@color/redtarget"/>
+                <Button
+                    android:id="@+id/seven_pointsB"
+                    style="@style/targetviewblacktext"
+                    android:onClick="addSevenForArcherB"
+                    android:text="+7 POINTS"
+                    android:background="@color/redtarget"/>
+                <Button
+                    android:id="@+id/six_pointsB"
+                    android:onClick="addSixForArcherB"
+                    android:text="+6 POINTS"
+                    style="@style/targetviewhitetext"
+                    android:background="@color/bluetarget"
+                    />
+                <Button
+                    android:id="@+id/five_pointsB"
+                    style="@style/targetviewhitetext"
+                    android:onClick="addFiveForArcherB"
+                    android:text="+5 POINTS"
+                    android:background="@color/bluetarget"
+                    />
+                <Button
+                    android:id="@+id/four_pointsB"
+                    style="@style/targetviewhitetext"
+                    android:onClick="addFourForArcherB"
+                    android:text="+4 POINTS"
+                    android:background="@color/blacktarget"
+                    />
+                <Button
+                    android:id="@+id/three_pointsB"
+                    style="@style/targetviewhitetext"
+                    android:onClick="addThreeForArcherB"
+                    android:text="+3 POINTS"
+                    android:background="@color/blacktarget"
+                    />
+                <Button
+                    android:id="@+id/two_pointsB"
+                    style="@style/targetviewblacktext"
+                    android:onClick="addTwoForArcherB"
+                    android:text="+2 POINTS"
+                    />
+                 <Button
+                    android:id="@+id/one_pointB"
+                    style="@style/targetviewblacktext"
+                    android:onClick="addOneForArcherB"
+                    android:text="+1 POINT"
+                     />
+
+            </LinearLayout>
+
+         </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="resetArchersScores"
+            android:text="Reset"
+            android:background="#009900"
+             />
+</RelativeLayout>

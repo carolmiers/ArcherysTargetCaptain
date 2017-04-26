@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="centretargetgold">#FFDF00</color>
+    <color name="redtarget">#ff0000</color>
+    <color name="bluetarget">#0004ff</color>
+    <color name="blacktarget">#000000</color>
+</resources>

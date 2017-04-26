@@ -1,0 +1,8 @@
+<resources>
+<dimen name="scoreboard_margin">24dp</dimen>
+    <dimen name="team_textsize">14sp</dimen>
+    <dimen name="targetpoint_spacing">8dp</dimen>
+    <dimen name="title_spacing">16dp</dimen>
+    <dimen name="lowest_horizontal_margin">32dp</dimen>
+
+</resources>
